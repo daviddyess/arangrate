@@ -11,11 +11,11 @@ export class Arangrate {
   }
 
   async migrate(target) {
-    const { path, table } = this.options;
+    const { path } = this.options;
 
-    await createCollection({ name: table });
+    await createCollection({ name: this.options.collection });
 
-    const collection = await db.collection(table);
+    const collection = await db.collection(this.options.collection);
 
     let info;
 

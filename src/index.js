@@ -1,9 +1,9 @@
-import { createCollection, createEdgeCollection, dropCollection } from 'utils';
-import migrate from 'migrate';
-
-export default {
+import 'dotenv/config';
+export {
+  aql,
+  db,
   createCollection,
   createEdgeCollection,
-  dropCollection,
-  migrate
-};
+  dropCollection
+} from 'utils';
+export { migrate as arangrate } from 'migrate';

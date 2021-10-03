@@ -1,4 +1,3 @@
-import 'dotenv/config';
 import { Database, aql as template, CollectionType } from 'arangojs';
 import { getLogger } from 'logade';
 
