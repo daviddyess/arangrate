@@ -1,0 +1,50 @@
+{
+  "name": "arangrate",
+  "version": "1.0.0",
+  "description": "ArangoDB migrations for node.js",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx babel src --watch --out-dir .dist",
+    "build": "npx babel src --out-dir .dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daviddyess/arangrate.git"
+  },
+  "keywords": [
+    "ArangoDB",
+    "migration",
+    "migrate",
+    "node.js"
+  ],
+  "author": "David L. Dyess II",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/daviddyess/arangrate/issues"
+  },
+  "homepage": "https://github.com/daviddyess/arangrate#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.15.7",
+    "@babel/core": "^7.15.5",
+    "@babel/plugin-transform-runtime": "^7.15.0",
+    "@babel/preset-env": "^7.15.6",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-import-resolver-babel-module": "^5.3.1",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-module-resolver": "^1.4.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^7.0.2",
+    "lint-staged": "^11.1.2",
+    "prettier": "^2.4.1"
+  },
+  "dependencies": {
+    "arangojs": "^7.5.0",
+    "commander": "^8.2.0",
+    "dotenv": "^10.0.0",
+    "logade": "^1.0.0"
+  }
+}
