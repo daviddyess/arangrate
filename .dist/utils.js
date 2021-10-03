@@ -12,8 +12,6 @@ var _regenerator = _interopRequireDefault(require("@babel/runtime/regenerator"))
 
 var _asyncToGenerator2 = _interopRequireDefault(require("@babel/runtime/helpers/asyncToGenerator"));
 
-require("dotenv/config");
-
 var _arangojs = require("arangojs");
 
 var _logade = require("logade");

@@ -51,21 +51,21 @@ var Arangrate = /*#__PURE__*/function () {
     key: "migrate",
     value: function () {
       var _migrate = (0, _asyncToGenerator2["default"])( /*#__PURE__*/_regenerator["default"].mark(function _callee(target) {
-        var _this$options, path, table, collection, info, files, _iterator, _step, file, storedMigrations, result, last, func, setup, date, _iterator2, _step2, mig, _func, _setup, _iterator3, _step3, _mig, _iterator4, _step4, previous, m, _iterator5, _step5, _mig2, _iterator6, _step6, _previous, _m;
+        var path, collection, info, files, _iterator, _step, file, storedMigrations, result, last, func, setup, date, _iterator2, _step2, mig, _func, _setup, _iterator3, _step3, _mig, _iterator4, _step4, previous, m, _iterator5, _step5, _mig2, _iterator6, _step6, _previous, _m;
 
         return _regenerator["default"].wrap(function _callee$(_context) {
           while (1) {
             switch (_context.prev = _context.next) {
               case 0:
-                _this$options = this.options, path = _this$options.path, table = _this$options.table;
+                path = this.options.path;
                 _context.next = 3;
                 return (0, _utils.createCollection)({
-                  name: table
+                  name: this.options.collection
                 });
 
               case 3:
                 _context.next = 5;
-                return _utils.db.collection(table);
+                return _utils.db.collection(this.options.collection);
 
               case 5:
                 collection = _context.sent;
