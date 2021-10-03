@@ -225,7 +225,7 @@ npm run migrate 0
 2021-10-03 16:59:52 [info][migrate] Migration target for DEVELOPMENT completed!
 ```
 
-### File Struction
+### File Structure
 
 The examples used here would fall under the following file structure:
 
@@ -237,6 +237,6 @@ The examples used here would fall under the following file structure:
       - 0001.undo.initial.js
     - prod
       - 0001.do.users.js
-      - 0001.unfo.users.js
+      - 0001.undo.users.js
   - migrate.js
 ```

@@ -1,6 +1,6 @@
 {
   "name": "arangrate",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ArangoDB migrations for node.js",
   "main": ".dist/index.js",
   "scripts": {
